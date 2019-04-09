@@ -177,8 +177,8 @@ header.masthead .profile-img-intro {
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
-  padding-right: 150px;
-  padding-left: 150px;
+  padding-right: 50px;
+  padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,6 +203,8 @@ header.masthead .intro-text .intro-lead-in {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
+    padding-right: 150px;
+    padding-left: 150px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 18px;
