@@ -45,7 +45,7 @@ section h2.section-heading {
 }
 
 section h5.section-subheading {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 15px;
   line-height: 2em;
   margin-bottom: 15px;
@@ -94,9 +94,18 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+::-moz-selection {
+  background: #61bcc6;
+  text-shadow: none;
+}
+
 ::selection {
   background: #61bcc6;
   text-shadow: none;
+}
+
+img::-moz-selection {
+  background: transparent;
 }
 
 img::selection {
@@ -245,7 +254,7 @@ header.masthead .intro-text .intro-lead-in {
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   cursor: pointer;
 }
