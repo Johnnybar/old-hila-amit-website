@@ -107,6 +107,21 @@ img::-moz-selection {
   background: transparent;
 }
 
+#more1 {
+  display: none;
+}
+
+#more2 {
+  display: none;
+}
+
+.readmoreBtn {
+  padding: 0.1em;
+  font-size: 0.8em;
+  border-radius: 20%;
+  line-height: 2em;
+}
+
 #mainNav {
   background-color: #fff;
 }
