@@ -115,10 +115,18 @@ img::-moz-selection {
   display: none;
 }
 
+#more3 {
+  display: none;
+}
+
 .readmoreBtn {
+  border: none;
+  font-style: italic;
+  font-weight: bolder;
+  color: #025d63;
+  background-color: transparent;
   padding: 0.1em;
-  font-size: 0.8em;
-  border-radius: 20%;
+  font-size: 1em;
   line-height: 2em;
 }
 
@@ -192,9 +200,9 @@ header.masthead {
 }
 
 header.masthead .profile-img-intro {
-  width: 136px;
-  height: 204px;
-  margin-right: 3rem;
+  width: 68px;
+  height: 102px;
+  margin-right: 1.5rem;
 }
 
 header.masthead .intro-text {

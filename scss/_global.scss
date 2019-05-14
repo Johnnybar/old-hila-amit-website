@@ -111,10 +111,17 @@ img::-moz-selection {
 #more2 {
   display: none;
 }
+#more3 {
+  display: none;
+}
 
 .readmoreBtn{
-padding: 0.1em;
-font-size: 0.8em;
-border-radius: 20%;
-line-height: 2em;
+  border: none;
+  font-style: italic;
+  font-weight: bolder;
+  color: #025d63;
+  background-color: transparent;
+  padding: 0.1em;
+  font-size: 1em;
+  line-height: 2em;
 }
