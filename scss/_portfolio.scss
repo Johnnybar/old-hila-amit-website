@@ -64,6 +64,12 @@
   }
 }
 @media(min-width:767px) {
+
+  .event-item:hover > .event-thumbnail{
+    opacity: 0.6
+  }
+
+  
   #portfolio {
     .portfolio-item {
       margin: 0 0 30px;
