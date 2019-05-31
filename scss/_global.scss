@@ -4,6 +4,7 @@ body {
   @include body-font;
 }
 
+
 p {
   line-height: 1.75;
 }
@@ -35,9 +36,9 @@ h6 {
   height: 35% !important
 }
 
-.h-7{
-  height: 8rem !important
-}
+// .h-7{
+//   height: 10em !important
+// }
 
 
 blockquote {
