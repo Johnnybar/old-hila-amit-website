@@ -70,11 +70,12 @@
   </nav>
 
   <!-- Header+About -->
+  <div itemscope itemprop="Person" itemtype="http://schema.org/Person">
   <header class="masthead" id="about">
     <div class="container">
       <div class="intro-text">
-        <img src="img/hila.jpg" class="profile-img-intro"></img>
-        <div class="intro-lead-in">Dr. Hila Amit was born in Israel in 1985 to a Jewish family with Iranian and Syrian
+        <img itemprop="image" src="img/hila.jpg" class="profile-img-intro" alt="photo of hila amit"></img>
+        <div itemprop="description" class="intro-lead-in"><span itemprop="jobTitle">Dr.</span> <span itemprop="name">Hila Amit</span> was born in Israel in 1985 to a Jewish family with Iranian and Syrian
           ethnic origins. She studied creative writing at the Tel Aviv University and holds a PhD in the field of Gender
           Studies from SOAS, University of London. Her first
           fiction book, <a href="http://www.ithl.org.il/page_16324" target="_blank">Moving On From Bliss</a> (Tel-Aviv:
@@ -93,6 +94,7 @@
       </div>
     </div>
   </header>
+</div>
 
 
   <!-- Fiction -->
@@ -117,12 +119,12 @@
         <h5 class="mb-4">Publications in Hebrew</h5>
         <br>
         <div class="row text-left mr-3">
-          <div class="col-sm-2 text-center">
+          <div itemscope itemtype="http://schema.org/Book" class="col-sm-2 text-center">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <img class="w-75" src="img/covers/meoshri-cover_2.jpg" alt="meoshri-cover">
             <h3 class="section-subheading text-muted d-flex flex-column mt-3 align-items-center text-left">
-              <small>
-                "Moving on from Bliss", Short Stories, Am
+              <small><span itemprop="name">
+                "Moving on from Bliss", Short Stories </span>, Am
                 Oved, 2016.</a>
               </small>
             </h3>
@@ -227,11 +229,10 @@
       </div>
       <h5 class="text-center mb-5">Publications in English</h5>
       <div class="row text-left mb-5">
-        <!-- <div class="row-sm-1 text-left">
-              </div> -->
+
       
         <br>
-        <div class="col-sm-2 border-right ">
+        <div itemscope itemtype="http://schema.org/Book" class="col-sm-2 border-right ">
         
         <h3 class="section-subheading mb-4 text-muted">
           <details>
@@ -239,8 +240,8 @@
           <small>
             <a href="http://www.sunypress.edu/p-6576-a-queer-way-out.aspx"
               target="_blank">
-              Queer Way Out – The
-              politics of queer Israeli emigration (Albany, NY: SUNY Press, 2018)</a> </summary>
+            <span itemprop="name"> Queer Way Out – The
+              politics of queer Israeli emigration</span> (Albany, NY: SUNY Press, 2018)</a> </summary>
  The very language of Zionism prizes the concept of immigration to Israel (aliyah, literally
             ascending) while stigmatizing emigration from Israel (yerida, descending). In A Queer Way Out, Hila Amit explores
               the as-yet-untold story of
