@@ -1,10 +1,12 @@
 backend:
-  name: github
+  name: git-gateway
   repo: hila-amit-website/johnnybar.github.io
   branch: master
   site_domain: johnnybar.github.io
 
-media_folder: "images/uploads"
+media_folder: "img"
+publish_mode: editorial_workflow
+
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
