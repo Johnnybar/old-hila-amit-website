@@ -2,7 +2,7 @@ backend:
   name: github
   repo: hila-amit-website/johnnybar.github.io
   branch: master
-  site_domain: laughing-pare-df22f2.netlify.com
+  site_domain: johnnybar.github.io
 
 media_folder: "images/uploads"
 
