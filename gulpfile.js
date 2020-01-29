@@ -51,19 +51,19 @@ function clean() {
 function modules() {
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
-    .pipe(gulp.dest('./dist/vendor/bootstrap'));
+    .pipe(gulp.dest('./vendor/bootstrap'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
-    .pipe(gulp.dest('./dist/vendor'));
+    .pipe(gulp.dest('./vendor'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./dist/vendor/jquery-easing'));
+    .pipe(gulp.dest('./vendor/jquery-easing'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
       '!./node_modules/jquery/dist/core.js'
     ])
-    .pipe(gulp.dest('./dist/vendor/jquery'));
+    .pipe(gulp.dest('./vendor/jquery'));
   return merge(bootstrap, fontAwesome, jquery, jqueryEasing);
 }
 
@@ -89,7 +89,7 @@ function css() {
       suffix: ".min"
     }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./css"))
     .pipe(browsersync.stream());
 }
 
@@ -109,7 +109,7 @@ function js() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./js'))
     .pipe(browsersync.stream());
 }
 
@@ -122,18 +122,14 @@ function watchFiles() {
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-gulp.task('build', gulp.series(vendor, gulp.parallel(css, js)))
 const build = gulp.series(vendor, gulp.parallel(css, js));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
-// function buildApp() {
-//   return gulp.series(vendor, gulp.parallel(css, js))();
-// }
 // Export tasks
 exports.css = css;
 exports.js = js;
-// exports.buildApp = buildApp;
 exports.clean = clean;
 exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
+exports.default = build;
