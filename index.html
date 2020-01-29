@@ -24,6 +24,7 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
     <meta name="google-site-verification" content="dKEL7Xakla4ahRKzGfwlVonMDyJluLNM-Zq21ERIwIk" />
+    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141331964-1"></script>
@@ -1484,7 +1485,17 @@ email: internationalhebrewschool@gmail.com</p>
             }
         }
     </script>
-
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
