@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: hila-amit-website/johnnybar.github.io
   branch: master
-  site_domain: hilaamit.com
+  site_domain: https://laughing-pare-df22f2.netlify.com/
 
 media_folder: "img"
 publish_mode: editorial_workflow
