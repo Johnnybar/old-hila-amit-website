@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: hila-amit-website/johnnybar.github.io
   branch: master
-  site_domain: johnnybar.github.io
+  site_domain: hilaamit.com
 
 media_folder: "img"
 publish_mode: editorial_workflow
