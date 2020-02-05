@@ -6,7 +6,7 @@ backend:
 
 media_folder: "img"
 publish_mode: editorial_workflow
-public_folder: "/"
+public_folder: "/dist"
 
 
 collections:
